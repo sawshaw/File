@@ -15,22 +15,22 @@ import org.slf4j.LoggerFactory;
 /**
  * @author mercy
  *文件解析器
- *数据库入库
+ *数据库入库和TextParse一样
  */
-public class TextParse {
-	public static Logger logger = LoggerFactory.getLogger(TextParse.class);
+public class TextParse2 {
+	public static Logger logger = LoggerFactory.getLogger(TextParse2.class);
 	 //每次读取的最大文件数
 	 private int maxfiles = 500;
 	 //锁所在目录
 	 public String fileLockPath="D:/fileTest/lock/";
 	 //锁定文件锁
-	 private String fileLock="FILE.LOCK";
+	 private String fileLock="FILE1.LOCK";
 	 private int flag=1;
-	 public  String localDir="D:/fileTest/old/";
+	 public  String localDir="D:/fileTest/old1/";
 	 //每隔1秒处理一个文件
 	 private int intevalTime = 1000;
 	 //文件备份目录
-	 private String localBakDir="D:/fileTest/new/";
+	 private String localBakDir="D:/fileTest/new1/";
 	 private static SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
 	 public void run(){
 		// while(true){
@@ -181,7 +181,7 @@ public class TextParse {
 	 private static void insertTable(String[] lines) {
 		//Model model=setModel(lines);
 		Dbutils util=new Dbutils();
-		String sql="insert into file2 values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+		String sql="insert into file1 values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		int i=0;
 		util.update(sql, lines[0],lines[1],lines[2],lines[3],lines[4],lines[5],lines[6],lines[7],lines[8],lines[9],lines[10],lines[11],lines[12],lines[13],lines[14],lines[15],lines[16],lines[17],lines[18],lines[19],lines[20],lines[21],lines[22],lines[23],lines[24],lines[25],lines[26],lines[27],lines[28],lines[29],lines[30],lines[31],lines[32],lines[33]);
 		
@@ -307,6 +307,6 @@ public class TextParse {
 	public static void main(String[] args){
 		//String fileName="/test.txt";
 		//doInsertTables(fileName);
-		new TextParse().run();
+		new TextParse2().run();
 	}
 }

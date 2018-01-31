@@ -20,7 +20,6 @@ public class Model {
 	private String contentId;
 	private String servicecapabiltyId;
 	private String beginTime;
-	private String nullPoint;
 	private String srcDeviceType;
 	private String srcDeviceId;
 	private String destDeviceType;
@@ -149,12 +148,6 @@ public class Model {
 	}
 	public void setBeginTime(String beginTime) {
 		this.beginTime = beginTime;
-	}
-	public String getNullPoint() {
-		return nullPoint;
-	}
-	public void setNullPoint(String nullPoint) {
-		this.nullPoint = nullPoint;
 	}
 	public String getSrcDeviceType() {
 		return srcDeviceType;
