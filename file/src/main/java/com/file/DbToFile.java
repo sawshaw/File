@@ -75,10 +75,10 @@ public class DbToFile {
 		Writer w = new FileWriter(file,true);
 		if(file.exists()){
 			//append
-			w.append(streamNo+"|"+timestamp+"|"+msgId+"|"+subscriptionId+"|"+oa+"|"+oaId+"|"+da+"|"+daId+"|"+fa+"|"+faId+"|"+faPayType+"|"+serviceType+"|"+cdrType+"|"+chargePartyType+"|"+spId+"|"+productOfferId+"|"+contentId+"|"+servicecapabiltyId+"|"+beginTime+"|"+nullpoint+"|"+srcDeviceType+"|"+srcDeviceId+"|"+destDeviceType+"|"+destDeviceId+"|"+times+"|"+duration+"|"+uplinkVolume+"|"+downlinkVolume+"|"+accessPointName+"|"+"|"+sgsnip+chargeResult+"|"+infoFee+"|"+channelFee+"|"+fee+"|"+constag+"\n");
+			w.append(streamNo+"|"+timestamp+"|"+msgId+"|"+subscriptionId+"|"+oa+"|"+oaId+"|"+da+"|"+daId+"|"+fa+"|"+faId+"|"+faPayType+"|"+serviceType+"|"+cdrType+"|"+chargePartyType+"|"+spId+"|"+productOfferId+"|"+contentId+"|"+servicecapabiltyId+"|"+beginTime+"|"+nullpoint+"|"+srcDeviceType+"|"+srcDeviceId+"|"+destDeviceType+"|"+destDeviceId+"|"+times+"|"+duration+"|"+uplinkVolume+"|"+downlinkVolume+"|"+accessPointName+"|"+sgsnip+"|"+chargeResult+"|"+infoFee+"|"+channelFee+"|"+fee+"|"+constag+"\n");
 		}else{
 			file.createNewFile();
-			w.append(streamNo+"|"+timestamp+"|"+msgId+"|"+subscriptionId+"|"+oa+"|"+oaId+"|"+da+"|"+daId+"|"+fa+"|"+faId+"|"+faPayType+"|"+serviceType+"|"+cdrType+"|"+chargePartyType+"|"+spId+"|"+productOfferId+"|"+contentId+"|"+servicecapabiltyId+"|"+beginTime+"|"+nullpoint+"|"+srcDeviceType+"|"+srcDeviceId+"|"+destDeviceType+"|"+destDeviceId+"|"+times+"|"+duration+"|"+uplinkVolume+"|"+downlinkVolume+"|"+accessPointName+"|"+"|"+sgsnip+chargeResult+"|"+infoFee+"|"+channelFee+"|"+fee+"|"+constag+"\n");
+			w.append(streamNo+"|"+timestamp+"|"+msgId+"|"+subscriptionId+"|"+oa+"|"+oaId+"|"+da+"|"+daId+"|"+fa+"|"+faId+"|"+faPayType+"|"+serviceType+"|"+cdrType+"|"+chargePartyType+"|"+spId+"|"+productOfferId+"|"+contentId+"|"+servicecapabiltyId+"|"+beginTime+"|"+nullpoint+"|"+srcDeviceType+"|"+srcDeviceId+"|"+destDeviceType+"|"+destDeviceId+"|"+times+"|"+duration+"|"+uplinkVolume+"|"+downlinkVolume+"|"+accessPointName+"|"+sgsnip+"|"+chargeResult+"|"+infoFee+"|"+channelFee+"|"+fee+"|"+constag+"\n");
 		}
 		w.flush();
         w.close();
