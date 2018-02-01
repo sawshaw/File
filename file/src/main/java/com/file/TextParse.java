@@ -208,6 +208,7 @@ public class TextParse {
 			model.setContentId(lines[i++]);
 			model.setServicecapabiltyId(lines[i++]);
 			model.setBeginTime(lines[i++]);
+			model.set(lines[i++]);
 			model.setSrcDeviceType(lines[i++]);
 			model.setSrcDeviceId(lines[i++]);
 			model.setDestDeviceType(lines[i++]);

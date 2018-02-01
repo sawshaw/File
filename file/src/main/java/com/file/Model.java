@@ -35,6 +35,7 @@ public class Model {
 	private String channelFee;
 	private String fee;
 	private String constag;
+	private String nullPoint;
 	public String getStreamNo() {
 		return streamNo;
 	}
@@ -239,5 +240,10 @@ public class Model {
 	public void setConstag(String constag) {
 		this.constag = constag;
 	}
-
+	public String getNullPoint() {
+		return nullPoint;
+	}
+	public void setNullPoint(String nullPoint) {
+		this.nullPoint = nullPoint;
+	}
 }
